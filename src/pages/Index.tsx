@@ -165,12 +165,25 @@ const Index = () => {
   };
 
   const riceChartData = {
-    labels: ['🪙 Grind to Shine', '🔥 Daily Spark', '🧭 Readiness Score + AutoApply', '👥 Squad Goals', '🧠 AI-Powered Mock Interview'],
+    labels: [
+      '⚖️ Fin-Fit Engine', 
+      '📦 GlassBox Tracker', 
+      '📊 Dollar-Dream Meter', 
+      '🤝 Future-Mate Pods', 
+      '🤖 AI SOP Evaluator'
+    ],
     datasets: [
       {
         label: 'RICE Score',
-        data: [90, 70, 80, 60, 45],
-        backgroundColor: ['#4C1D95', '#A78BFA', '#7C3AED', '#C4B5FD', '#EDE9FE'],
+        // Scores based on: Reach (all students) x Impact (high trust/conversion) x Confidence / Effort
+        data: [92, 88, 75, 65, 45], 
+        backgroundColor: [
+          '#4C1D95', // Deep Purple (Highest Priority: Fin-Fit)
+          '#7C3AED', // Mid Purple (GlassBox Tracker)
+          '#A78BFA', // Light Purple (Dollar-Dream Meter)
+          '#C4B5FD', // Soft Purple (Future-Mate Pods)
+          '#EDE9FE'  // Faint Purple (AI SOP Evaluator - High Effort/Lower Confidence)
+        ],
         borderRadius: 4,
       }
     ]
@@ -612,7 +625,7 @@ const Index = () => {
             </div>
             <div className="flex-1 w-full">
               <h2 className="text-3xl font-extrabold text-slate-900 mb-4">About Me</h2>
-              <p className="text-lg text-slate-700 mb-3">Currently APM @ Moveinsync</p>
+              <p className="text-lg text-slate-700 mb-3">Currently Agentic AI SPA @ Unifyapps</p>
               <p className="text-slate-700 mb-8 text-base md:text-lg">
                 {content.aboutMeDescription}
               </p>
@@ -625,6 +638,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-6 mt-8">
                 <a href={content.linkedinUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition text-lg">🔗 Connect on LinkedIn</a>
                 <a href={content.resumeUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-slate-800 text-white font-semibold rounded-lg shadow hover:bg-slate-900 transition text-lg">📄 View My Resume</a>
+                <a href={content.chitxUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition text-lg">📱 Download ChitX</a>
               </div>
             </div>
           </div>
